@@ -1,2 +1,2 @@
-# React-practice
+# react-practice
 Developer: Blake Thollaug
