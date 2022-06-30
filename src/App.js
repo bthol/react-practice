@@ -1,14 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import { Comp1 } from './Components/Comp1';
+
 
 function App() {
+  const [data, setData] = useState({});
+  const setDataFunct =  (data) => {
+    setData(data);
+  };
+  async function getMoviesByName(name) {
+    const URI = `http://www.omdbapi.com/?apikey=e2198cc1&t=${name}`;
+    const response = await fetch(URI);
+    const data = await response.json();
+    setDataFunct(data);
+  };
+  // getMoviesByName("Avengers");
   return (
     <div className="App">
-      <header className="App-header">
+      <section className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Blake was here</p>
         <img src={logo} className="App-logo App-logo-2" alt="logo" />
-      </header>
+      </section>
+      <Comp1 />
+      <section>
+        <p>Movies by Name</p>
+        {JSON.stringify(data)}
+      </section>
     </div>
   );
 }
