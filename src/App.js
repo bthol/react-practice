@@ -22,11 +22,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <img src={logo} className="App-logo App-logo-2" alt="logo" />
       </section>
-      <Comp1 />
-      <section>
-        <p>Movies by Name</p>
-        {JSON.stringify(data)}
-      </section>
+      <Comp1 
+        data={data}
+      />
     </div>
   );
 }

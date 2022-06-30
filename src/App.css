@@ -16,7 +16,7 @@
     animation: App-logo-spin infinite 1400ms ease-in;
   }
   .App-logo-2 {
-    animation: App-logo-spin infinite 1400ms ease-out;
+    animation: App-logo-spin infinite 1400ms ease-out reverse;
   }
 }
 
