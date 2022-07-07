@@ -67,9 +67,12 @@ function App() {
       <section>
         <h1>Send them a smile with your favorite movie!</h1>
         <h2>Choose from thousands of movies...</h2>
-        <Comp1 data={data}/>
-        <Comp1 data={data}/>
-        <Comp1 data={data}/>
+        <div className="cards-container">
+          <Comp1 cardImage={""} cardTitle={"Card 1"} cardDescription={"this is the first card description."} />
+          <Comp1 cardImage={""} cardTitle={"Card 2"} cardDescription={"this is the second card description."} />
+          <Comp1 cardImage={""} cardTitle={"Card 3"} cardDescription={"this is the third card description."} />
+        </div>
+        <div>{JSON.stringify(data.name)}</div>
       </section>
     </div>
   );
