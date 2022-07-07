@@ -61,16 +61,18 @@ function App() {
   return (
     <div className="App">
       <section className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <img src={logo} className="App-logo App-logo-2" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" style={{background: "red", animationDelay: "200ms"}} />
+        <img src={logo} className="App-logo App-logo-2" alt="logo" style={{animationDelay: "400ms"}}/>
+        <img src={logo} className="App-logo" alt="logo" style={{background: "red", animationDelay: "600ms"}} />
       </section>
       <section>
-        <h1>Send them a smile with your favorite movie!</h1>
+        <h1>Send them a smile with their favorite movie!</h1>
         <h2>Choose from thousands of movies...</h2>
         <div className="cards-container">
-          <Comp1 cardImage={""} cardTitle={"Card 1"} cardDescription={"this is the first card description."} />
-          <Comp1 cardImage={""} cardTitle={"Card 2"} cardDescription={"this is the second card description."} />
-          <Comp1 cardImage={""} cardTitle={"Card 3"} cardDescription={"this is the third card description."} />
+          <Comp1 cardImage={""} cardTitle={"Card Title 1"} cardDescription={"this is the first card description."} />
+          <Comp1 cardImage={""} cardTitle={"Card Title 2"} cardDescription={"this is the second card description."} />
+          <Comp1 cardImage={""} cardTitle={"Card Title 3"} cardDescription={"this is the third card description."} />
         </div>
         <div>{JSON.stringify(data.name)}</div>
       </section>

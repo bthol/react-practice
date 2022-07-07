@@ -5,9 +5,9 @@ function Comp1(props) {
     return (
       <div style={{display: "flex"}}>
         <div>
-          <img src={props.cardImage} alt="image"></img>
+          <img src={props.cardImage} alt="card-image"></img>
           <h3>{props.cardTitle}</h3>
-          <p>Description: {props.cardDescription}</p>
+          <p><b>Description:</b> {props.cardDescription}</p>
         </div>
       </div>
     );

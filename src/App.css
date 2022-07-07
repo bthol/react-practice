@@ -9,14 +9,17 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  background: rgba(255, 128, 0, .8);
+  border-radius: 1000px;
+  width: .5vmin;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 1400ms ease-in;
+    animation: App-logo-spin infinite 1600ms ease-in;
   }
   .App-logo-2 {
-    animation: App-logo-spin infinite 1400ms ease-out reverse;
+    animation: App-logo-spin infinite 1600ms ease-out reverse;
   }
 }
 
@@ -24,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10vmin;
 }
 
 .App-link {
