@@ -1,7 +1,7 @@
 .App {
   min-height: 100vh;
   text-align: center;
-  background-color: #282c34;
+  background-color: hsl(220, 25%, 18%);
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -12,6 +12,7 @@
   background: rgba(255, 128, 0, .8);
   border-radius: 1000px;
   width: .5vmin;
+  height: 25vmin;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,7 +24,7 @@
   }
 }
 
-.App-header {
+.App-animation {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,13 +45,16 @@
 }
 
 .cards-container {
+  border-top: 1.5px solid white;
+  border-bottom: 1.5px solid white;
   display: flex;
   justify-content: space-around;
   color: #282c34;
-  background: hsl(0, 0%, 63%);
+  background: hsl(100, 10%, 63%);
 }
 .card {
+  padding: 1vmin;
   margin: 3vmin;
   border-radius: 12px;
-  background: hsl(0, 0%, 87%);
+  background: hsl(60, 84%, 87%);
 }

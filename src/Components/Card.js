@@ -1,7 +1,7 @@
 import React from "react";
 // import { useState } from "react";
 
-function Comp1(props) {
+function Card(props) {
     return (
       <div className="card">
         <div>
@@ -13,4 +13,4 @@ function Comp1(props) {
     );
 }
 
-export { Comp1 };
+export { Card };
