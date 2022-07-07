@@ -46,4 +46,11 @@
 .cards-container {
   display: flex;
   justify-content: space-around;
+  color: #282c34;
+  background: hsl(0, 0%, 63%);
+}
+.card {
+  margin: 3vmin;
+  border-radius: 12px;
+  background: hsl(0, 0%, 87%);
 }

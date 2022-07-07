@@ -3,7 +3,7 @@ import React from "react";
 
 function Comp1(props) {
     return (
-      <div style={{display: "flex"}}>
+      <div className="card">
         <div>
           <img src={props.cardImage} alt="card-image"></img>
           <h3>{props.cardTitle}</h3>
